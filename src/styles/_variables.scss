@@ -4,6 +4,15 @@ $success: #00f2c3;
 $info: #1d8cf8;
 $warning: #ff8d72;
 $danger: #fd5d93;
+
+$light: #e7eaec;
+
+$bg-primary: #1e1e2e;
+$bg-card: #27293d;
+$bg-hover: #47495e;
+
+$gray: #6c757d;
+
 $blue: #5e72e4;
 $indigo: #5603ad;
 $purple: #8965e0;
@@ -14,13 +23,11 @@ $yellow: #ffd600;
 $green: #2dce89;
 $teal: #11cdef;
 $cyan: #2bffc6;
-$white: #fff;
-$gray: #6c757d;
-$gray-dark: #32325d;
-$light: #ced4da;
-$lighter: #e9ecef;
-$dark: #212529;
-$default: #344675;
-$white: #fff;
-$neutral: #fff;
-$darker: black;
+
+$gradient-primary: linear-gradient(to bottom left, #e14eca, #ba54f5);
+$gradient-info: linear-gradient(to bottom left, #1d8cf8, #3358f4);
+$gradient-success: linear-gradient(to bottom left, #00f2c3, #0098f0);
+$gradient-warning: linear-gradient(to bottom left, #ff8d72, #ff6491);
+$gradient-danger: linear-gradient(to bottom left, #fd5d93, #ec250d);
+
+$border-radius: 8px;

@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template:
+    "sidenav header" 54px
+    "sidenav content" 1fr
+    "sidenav footer" 54px / 240px 1fr;
+  height: 100vh;
+
+  .sidenav-container {
+    grid-area: sidenav;
+    padding: 16px;
+
+    .side-nav {
+      background: $bg-card;
+      height: 100%;
+      border-radius: $border-radius;
+    }
+  }
+
+  .content {
+    grid-area: content;
+  }
+}

@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
 @import "./reset";
 @import "./variables";
 
+@import "./components/layout/Layout";
 @import "./components/typography/CText";
 @import "../components/buttons/Button";
+@import "./components/sidenav/components/SideNavMenu";
+
+body {
+  background-color: $bg-primary;
+  color: $light;
+  font-family: "Roboto", sans-serif;
+}

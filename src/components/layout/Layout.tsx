@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../header/Header";
+import { Outlet } from "react-router-dom";
+import SideNav from "../sidenav/SideNav";
 
 type LayoutProps = {
   children: React.ReactElement;
@@ -8,8 +9,10 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps): React.ReactElement => {
   return (
     <div className="container">
-      <Header />
-      <div>{children}</div>
+      <SideNav />
+      <div className="content">
+        <Outlet />
+      </div>
     </div>
   );
 };
