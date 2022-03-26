@@ -1,6 +1,5 @@
 import React from "react";
 import { Meta } from "@storybook/react";
-import { Canvas, Story } from "@storybook/addon-docs";
 import { templateForComponent } from "./Helpers";
 
 import CText, { CTextProps } from "../components/typography/CText";
@@ -9,13 +8,8 @@ import CText, { CTextProps } from "../components/typography/CText";
  * Initialize meta data for component story
  */
 const meta: Meta = {
-  title: "Components/Typography",
+  title: "General/Typography",
   component: CText,
-  parameters: {
-    docs: {
-      page: null,
-    },
-  },
 };
 
 /**
@@ -23,7 +17,7 @@ const meta: Meta = {
  */
 const Template = templateForComponent(CText);
 
-//Button color variants
+//Typography color variants
 export const Text = Template({
   type: "heading-1",
   children: "This is a Typography Component",

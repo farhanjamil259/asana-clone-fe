@@ -8,7 +8,7 @@ import MyButton, { ButtonProps } from "../components/buttons/Button";
  * Initialize meta data for component story
  */
 const meta: Meta = {
-  title: "Components/Buttons",
+  title: "General/Buttons",
   component: MyButton,
   argTypes: { handleClick: { action: "handleClick" } },
 };
@@ -48,7 +48,7 @@ export const ButtonStories = (): React.ReactElement => {
 };
 
 ButtonStories.story = {
-  name: "All Variants",
+  name: "Variants",
 };
 
 export default meta;
