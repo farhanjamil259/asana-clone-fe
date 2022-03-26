@@ -3,6 +3,11 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 6px;
+
+  &--rounded {
+    border-radius: 30px;
+  }
 
   &:hover {
     transform: translateY(-1px);
@@ -15,15 +20,15 @@
   }
 
   &--primary {
-    background-color: $primary;
+    background: $gradient-primary;
   }
 
   &--success {
-    background-color: $success;
+    background: $gradient-success;
   }
 
   &--danger {
-    background-color: $danger;
+    background: $gradient-danger;
   }
 
   &--small {
