@@ -1,0 +1,30 @@
+.btn {
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  &--primary {
+    background-color: $primary;
+  }
+
+  &--success {
+    background-color: $success;
+  }
+
+  &--danger {
+    background-color: $danger;
+  }
+
+  &--small {
+    font-size: 12px;
+  }
+
+  &--medium {
+    font-size: 16px;
+  }
+
+  &--large {
+    font-size: 20px;
+  }
+}
