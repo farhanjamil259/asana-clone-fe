@@ -1,30 +1,54 @@
+import React from "react";
 import { Meta } from "@storybook/react";
 import { templateForComponent } from "./Helpers";
 
-import Button from "../components/buttons/Button";
+import MyButton, { ButtonProps } from "../components/buttons/Button";
 
 /**
  * Initialize meta data for component story
  */
 const meta: Meta = {
   title: "Components/Buttons",
-  component: Button,
+  component: MyButton,
   argTypes: { handleClick: { action: "handleClick" } },
 };
 
 /**
  * Create template to create multiple variants of the component
  */
-const Template = templateForComponent(Button);
+const Template = templateForComponent(MyButton);
 
 //Button color variants
-export const Primary = Template({ variant: "primary", text: "Button" });
-export const Success = Template({ variant: "success", text: "Button" });
-export const Danger = Template({ variant: "danger", text: "Button" });
+export const Button = Template({ variant: "primary", text: "Click Me" });
 
-//Button size variants
-export const Small = Template({ size: "small", text: "Button" });
-export const Medium = Template({ size: "medium", text: "Button" });
-export const Large = Template({ size: "large", text: "Button" });
+export const ButtonStories = (): React.ReactElement => {
+  const variants: ButtonProps["variant"][] = ["primary", "success", "danger"];
+
+  const sizes: ButtonProps["size"][] = ["small", "medium", "large"];
+
+  return (
+    <>
+      <div
+        style={{
+          marginBottom: 16,
+        }}
+      >
+        {sizes.map((s, i) => {
+          return <MyButton key={i} size={s} text="Click Me" />;
+        })}
+      </div>
+
+      <div style={{ display: "flex", gap: 16 }}>
+        {variants.map((v, i) => {
+          return <MyButton key={i} variant={v} text="Click Me" />;
+        })}
+      </div>
+    </>
+  );
+};
+
+ButtonStories.story = {
+  name: "All Variants",
+};
 
 export default meta;
