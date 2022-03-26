@@ -1,0 +1,63 @@
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $light;
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--heading-1 {
+    font-size: 33px;
+    line-height: 150%;
+  }
+
+  &--heading-2 {
+    font-size: 27px;
+    line-height: 150%;
+  }
+
+  &--heading-3 {
+    font-size: 23px;
+    line-height: 150%;
+  }
+
+  &--heading-4 {
+    font-size: 17px;
+    line-height: 150%;
+  }
+
+  &--heading-5 {
+    font-size: 13px;
+    line-height: 150%;
+  }
+
+  &--heading-6 {
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  &--mute {
+    color: $gray;
+  }
+
+  &--primary {
+    color: $primary;
+  }
+
+  &--info {
+    color: $info;
+  }
+
+  &--success {
+    color: $success;
+  }
+
+  &--warning {
+    color: $warning;
+  }
+
+  &--danger {
+    color: $danger;
+  }
+}

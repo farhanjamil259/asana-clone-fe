@@ -37,7 +37,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "todo": "leasot **/** .**/** -i node_modules -S -x",
-    "storybook": "start-storybook -p 6006 -s public",
+    "story": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
@@ -80,6 +80,7 @@
     "leasot": "^12.0.0",
     "prettier": "2.5.1",
     "sass-loader": "^12.6.0",
+    "storybook-dark-mode": "^1.0.9",
     "style-loader": "^3.3.1",
     "stylelint": "^14.5.3",
     "stylelint-config-prettier-scss": "^0.0.1",
