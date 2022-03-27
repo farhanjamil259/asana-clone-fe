@@ -6,6 +6,8 @@ export type ButtonProps = {
   size?: "small" | "medium" | "large";
   text?: string;
   rounded?: boolean;
+  fullWidth?: boolean;
+  classNames?: string;
   handleClick?: () => void;
 };
 
@@ -14,6 +16,8 @@ const Button = ({
   size = "medium",
   text,
   rounded,
+  fullWidth,
+  classNames,
   handleClick,
 }: ButtonProps): React.ReactElement => {
   const coreClass = "btn";
@@ -21,10 +25,11 @@ const Button = ({
     [`${coreClass}--${variant}`]: variant,
     [`${coreClass}--${size}`]: size,
     [`${coreClass}--rounded`]: rounded,
+    [`${coreClass}--full-width`]: fullWidth,
   });
 
   return (
-    <button className={cssClasses} onClick={handleClick}>
+    <button className={`${cssClasses} ${classNames}`} onClick={handleClick}>
       {text}
     </button>
   );

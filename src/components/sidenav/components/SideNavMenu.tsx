@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Projects } from "../../../mockedData";
 import CText from "../../typography/CText";
 
@@ -17,15 +18,19 @@ const SideNavMenu = (): React.ReactElement => {
         <div className="side-menu__projects">
           {Projects.map((p, i) => {
             return (
-              <div className="side-menu__project" key={i}>
+              <Link
+                to={`project/${i}/board`}
+                className="side-menu__project"
+                key={i}
+              >
                 <div
                   style={{
                     backgroundColor: p.color,
                   }}
                   className="side-menu__project--color"
-                />{" "}
+                />
                 {p.name}
-              </div>
+              </Link>
             );
           })}
         </div>

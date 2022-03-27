@@ -1,9 +1,9 @@
 .container {
   display: grid;
   grid-template:
-    "sidenav header" 54px
+    "sidenav header" auto
     "sidenav content" 1fr
-    "sidenav footer" 54px / 240px 1fr;
+    "sidenav footer" 0 / 240px 1fr;
   height: 100vh;
 
   .sidenav-container {
@@ -19,5 +19,6 @@
 
   .content {
     grid-area: content;
+    overflow: scroll;
   }
 }
