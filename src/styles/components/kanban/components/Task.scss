@@ -1,0 +1,15 @@
+.task {
+  padding: 16px;
+  background-color: #a8a8a8;
+  border-radius: 8px;
+  margin: 8px 0;
+  cursor: pointer !important;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &--dragging {
+    border: 2px solid #505050;
+  }
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import SideNav from "../sidenav/SideNav";
 
 type LayoutProps = {
@@ -10,9 +9,7 @@ const Layout = ({ children }: LayoutProps): React.ReactElement => {
   return (
     <div className="container">
       <SideNav />
-      <div className="content">
-        <Outlet />
-      </div>
+      <div className="content">{children}</div>
     </div>
   );
 };

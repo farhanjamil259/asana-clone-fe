@@ -7,6 +7,10 @@
 @import "./components/typography/CText";
 @import "../components/buttons/Button";
 @import "./components/sidenav/components/SideNavMenu";
+@import "./components/kanban/components/Column";
+@import "./components/kanban/components/Task";
+@import "./components/kanban/Kanban";
+@import "./components/horizontalMenu/HorizontalMenu";
 
 body {
   background-color: $bg-primary;
