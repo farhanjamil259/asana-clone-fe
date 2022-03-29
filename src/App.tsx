@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Project from "./pages/Project";
 import Kanban from "./components/kanban/Kanban";
+import NotificationContainer from "./components/notification/NotificationContainer";
 
 const App = (): React.ReactElement => {
   return (
@@ -16,6 +17,7 @@ const App = (): React.ReactElement => {
             </Route>
           </Routes>
         </Layout>
+        <NotificationContainer />
       </BrowserRouter>
     </StoreProvider>
   );

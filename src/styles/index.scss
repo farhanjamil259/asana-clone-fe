@@ -11,6 +11,7 @@
 @import "./components/kanban/components/Task";
 @import "./components/kanban/Kanban";
 @import "./components/horizontalMenu/HorizontalMenu";
+@import "./components/notification/Notification";
 
 body {
   background-color: $bg-primary;

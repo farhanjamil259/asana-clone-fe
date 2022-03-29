@@ -1,0 +1,47 @@
+.notifications-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: fit-content;
+}
+
+.notification {
+  margin: 16px;
+  padding: 14px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 1;
+  animation: notification-show 0.5s;
+  animation-iteration-count: 1;
+
+  &--success {
+    background-color: $success;
+  }
+
+  &--warning {
+    background-color: $warning;
+  }
+
+  &--danger {
+    background-color: $danger;
+  }
+
+  &__close {
+    cursor: pointer;
+  }
+}
+
+@keyframes notification-show {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
