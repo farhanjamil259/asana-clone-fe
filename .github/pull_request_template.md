@@ -14,7 +14,7 @@
 
 - [ ] My task has **visual changes**
   - [ ] I've attached the screenshots <!-- If your changes reflect updates on the UI, please attach some screenshots -->
-  - [ ] The visual changes follow the design presented on figma <!-- if not, justify below -->
+  - [ ] The visual changes follow the design presented <!-- if not, justify below -->
 - [ ] My changes were properly tested in all the possible scenarios
 - [ ] My code follows the code style of this project.
 - [ ] I have merged current `develop` to this branch.
